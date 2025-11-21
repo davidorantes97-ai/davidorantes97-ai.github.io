@@ -1,34 +1,43 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Orantes Cubias | Portafolio</title>
+
+  <!-- Vincula al CSS -->
   <link rel="stylesheet" href="styles.css">
-  <script src="main.js" defer></script>
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Vincula al JS -->
   <script src="main.js" defer></script>
 </head>
+
 <body>
-  <header class="hero">
+
+  <!-- HERO -->
+  <header class="hero reveal">
     <h1>David Orantes Cubias</h1>
     <p>Ingeniero Aeronáutico · CAD · CFD · MATLAB</p>
   </header>
 
-  <section class="section">
+  <!-- SOBRE MÍ -->
+  <section class="section reveal">
     <h2>Sobre mí</h2>
-    <div class="card reveal">
-      <p>Ingeniero Aeronáutico con experiencia en SolidWorks, Flow Simulation, MATLAB, manufactura aditiva y publicación científica en IEEE Xplore. Enfocado en ingeniería aplicada, aerodinámica y simulación computacional.</p>
+    <div class="card">
+      <p>
+        Ingeniero Aeronáutico con experiencia en SolidWorks, Flow Simulation y MATLAB.
+        Publicado en IEEE Xplore y enfocado en aerodinámica, diseño CAD y simulación computacional.
+      </p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- PROYECTOS -->
+  <section class="section reveal">
     <h2>Proyectos Destacados</h2>
 
-    <div class="card reveal">
+    <div class="card">
       <h3>Diseño Conceptual de Túnel de Viento LSWT</h3>
-      <p>Desarrollo CAD, análisis CFD, estimación de pérdidas y selección de ventilador axial.</p>
+      <p>Desarrollo CAD, análisis CFD, selección de ventilador axial y diseño por parámetros geométricos.</p>
       <div class="tags">
         <span class="tag">SolidWorks</span>
         <span class="tag">Flow Simulation</span>
@@ -36,18 +45,18 @@
       </div>
     </div>
 
-    <div class="card reveal">
+    <div class="card">
       <h3>Método Híbrido FFF + Cold Casting</h3>
-      <p>Uso de estructuras huecas con resinas epóxicas/poliuretano para mejorar resistencia.</p>
+      <p>Optimización de peso y resistencia utilizando estructuras huecas rellenadas con resinas.</p>
       <div class="tags">
         <span class="tag">Materiales</span>
         <span class="tag">3D Printing</span>
       </div>
     </div>
 
-    <div class="card reveal">
+    <div class="card">
       <h3>Simulación CFD de Ductos</h3>
-      <p>Simulaciones de velocidad, presión y coeficientes de pérdida.</p>
+      <p>Análisis de velocidad, presión y coeficientes de pérdida.</p>
       <div class="tags">
         <span class="tag">CFD</span>
         <span class="tag">Flow Simulation</span>
@@ -55,7 +64,8 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- GALERÍA -->
+  <section class="section reveal">
     <h2>Galería</h2>
     <div class="gallery">
       <img src="https://via.placeholder.com/600x400?text=CAD" class="imgcard reveal">
@@ -65,17 +75,23 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- PUBLICACIONES -->
+  <section class="section reveal">
     <h2>Publicaciones</h2>
-    <div class="card reveal">
-      <p><strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>IEEE Xplore – 2023<br>DOI: 10.1109/CONCAPANXLI59599.2023.10517570</p>
+    <div class="card">
+      <p>
+        <strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>
+        IEEE Xplore – 2023<br>
+        DOI: 10.1109/CONCAPANXLI59599.2023.10517570
+      </p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- CONTACTO -->
+  <section class="section reveal">
     <h2>Contacto</h2>
-    <div class="card reveal">
-      <p>Email: <strong>david.orantes@gmail.com</strong></p>
+    <div class="card">
+      <p>Email: <strong>david.orantes97@gmail.com</strong></p>
       <p>GitHub: <strong>https://github.com/davidorantes97-ai</strong></p>
       <p>LinkedIn: <strong>https://linkedin.com/in/tuusuario</strong></p>
     </div>
@@ -84,110 +100,8 @@
   <footer class="footer">
     © 2025 · Portafolio de David Orantes Cubias
   </footer>
+
 </body>
 </html>
 
-
-/* styles.css */
-/* ==== SCROLL REVEAL ANIMATION ==== */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Existing styles below */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #f5f5f7;
-  color: #1d1d1f;
-}
-
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: linear-gradient(180deg, #0a0a23, #111133);
-  color: white;
-}
-
-.section { max-width: 1100px; margin: 4rem auto; padding: 0 2rem; }
-.section h2 { font-size: 2rem; margin-bottom: 2rem; }
-
-.card {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  padding: 2rem;
-  border-radius: 28px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  margin-bottom: 2.5rem;
-  transition: all .3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 34px rgba(0,0,0,0.15);
-}
-
-.tag {
-  display: inline-block;
-  background: #0a0a23;
-  color: white;
-  padding: .35rem .9rem;
-  border-radius: 12px;
-  margin: .25rem;
-  font-size: .8rem;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-
-.imgcard {
-  width: 100%;
-  border-radius: 22px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-}
-
-.footer { text-align: center; padding: 3rem; color: #555; }
-
-
-// main.js
-// === Scroll Reveal Apple Style ===
-document.addEventListener("DOMContentLoaded", () => {
-  const reveals = document.querySelectorAll(".reveal");
-
-  const options = { threshold: 0.2 };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, options);
-
-  reveals.forEach(reveal => observer.observe(reveal));
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-
-  cards.forEach(card => {
-    card.addEventListener("mousemove", () => {
-      card.style.transform = "translateY(-4px)";
-    });
-    card.addEventListener("mouseleave", () => {
-      card.style.transform = "translateY(0)";
-    });
-  });
-});
 

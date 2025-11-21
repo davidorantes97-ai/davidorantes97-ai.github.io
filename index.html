@@ -7,6 +7,8 @@
   <title>David Orantes Cubias | Portafolio</title>
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
   <header class="hero">
@@ -16,7 +18,7 @@
 
   <section class="section">
     <h2>Sobre mí</h2>
-    <div class="card">
+    <div class="card reveal">
       <p>Ingeniero Aeronáutico con experiencia en SolidWorks, Flow Simulation, MATLAB, manufactura aditiva y publicación científica en IEEE Xplore. Enfocado en ingeniería aplicada, aerodinámica y simulación computacional.</p>
     </div>
   </section>
@@ -24,7 +26,7 @@
   <section class="section">
     <h2>Proyectos Destacados</h2>
 
-    <div class="card">
+    <div class="card reveal">
       <h3>Diseño Conceptual de Túnel de Viento LSWT</h3>
       <p>Desarrollo CAD, análisis CFD, estimación de pérdidas y selección de ventilador axial.</p>
       <div class="tags">
@@ -34,7 +36,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
       <h3>Método Híbrido FFF + Cold Casting</h3>
       <p>Uso de estructuras huecas con resinas epóxicas/poliuretano para mejorar resistencia.</p>
       <div class="tags">
@@ -43,7 +45,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card reveal">
       <h3>Simulación CFD de Ductos</h3>
       <p>Simulaciones de velocidad, presión y coeficientes de pérdida.</p>
       <div class="tags">
@@ -56,24 +58,24 @@
   <section class="section">
     <h2>Galería</h2>
     <div class="gallery">
-      <img src="https://via.placeholder.com/600x400?text=CAD" class="imgcard">
-      <img src="https://via.placeholder.com/600x400?text=CFD" class="imgcard">
-      <img src="https://via.placeholder.com/600x400?text=LSWT" class="imgcard">
-      <img src="https://via.placeholder.com/600x400?text=Casting" class="imgcard">
+      <img src="https://via.placeholder.com/600x400?text=CAD" class="imgcard reveal">
+      <img src="https://via.placeholder.com/600x400?text=CFD" class="imgcard reveal">
+      <img src="https://via.placeholder.com/600x400?text=LSWT" class="imgcard reveal">
+      <img src="https://via.placeholder.com/600x400?text=Casting" class="imgcard reveal">
     </div>
   </section>
 
   <section class="section">
     <h2>Publicaciones</h2>
-    <div class="card">
+    <div class="card reveal">
       <p><strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>IEEE Xplore – 2023<br>DOI: 10.1109/CONCAPANXLI59599.2023.10517570</p>
     </div>
   </section>
 
   <section class="section">
     <h2>Contacto</h2>
-    <div class="card">
-      <p>Email: <strong>david.orantes97@gmail.com</strong></p>
+    <div class="card reveal">
+      <p>Email: <strong>david.orantes@gmail.com</strong></p>
       <p>GitHub: <strong>https://github.com/davidorantes97-ai</strong></p>
       <p>LinkedIn: <strong>https://linkedin.com/in/tuusuario</strong></p>
     </div>
@@ -87,6 +89,19 @@
 
 
 /* styles.css */
+/* ==== SCROLL REVEAL ANIMATION ==== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Existing styles below */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -145,6 +160,23 @@ body {
 
 
 // main.js
+// === Scroll Reveal Apple Style ===
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  const options = { threshold: 0.2 };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, options);
+
+  reveals.forEach(reveal => observer.observe(reveal));
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".card");
@@ -158,3 +190,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+

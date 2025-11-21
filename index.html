@@ -1,107 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Orantes Cubias | Portafolio</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portafolio – David Orantes Cubias</title>
 
-  <!-- Vincula al CSS -->
-  <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- Vincula al JS -->
-  <script src="main.js" defer></script>
+<!-- CSS -->
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <header class="hero reveal">
-    <h1>David Orantes Cubias</h1>
-    <p>Ingeniero Aeronáutico · CAD · CFD · MATLAB</p>
-  </header>
+<!-- NAV -->
+<div class="nav">
+  <h1 class="logo">David Orantes Cubias</h1>
+  <div class="subtitle">Ingeniero Aeronáutico · CAD · CFD · MATLAB</div>
+</div>
 
-  <!-- SOBRE MÍ -->
-  <section class="section reveal">
-    <h2>Sobre mí</h2>
-    <div class="card">
-      <p>
-        Ingeniero Aeronáutico con experiencia en SolidWorks, Flow Simulation y MATLAB.
-        Publicado en IEEE Xplore y enfocado en aerodinámica, diseño CAD y simulación computacional.
-      </p>
+<!-- PANEL 1 – SOBRE MI -->
+<section class="panel reveal slide-left">
+  <h2>Sobre mí</h2>
+  <p>
+    Ingeniero Aeronáutico especializado en diseño CAD, análisis CFD, simulaciones en MATLAB y
+    manufactura aditiva. Autor publicado en IEEE Xplore. Enfocado en la integración de ingeniería,
+    computación científica y aerodinámica aplicada.
+  </p>
+</section>
+
+<!-- PANEL 2 – PROYECTOS -->
+<section class="panel reveal slide-right">
+  <h2>Proyectos Destacados</h2>
+
+  <div class="card">
+    <h3>Túnel de Viento LSWT</h3>
+    <p>Diseño conceptual CAD, análisis de pérdidas, selección de ventilador axial y cálculos por parámetros geométricos.</p>
+    <div class="tags">
+      <span>SolidWorks</span><span>CFD</span><span>Flow Simulation</span>
     </div>
-  </section>
+  </div>
 
-  <!-- PROYECTOS -->
-  <section class="section reveal">
-    <h2>Proyectos Destacados</h2>
-
-    <div class="card">
-      <h3>Diseño Conceptual de Túnel de Viento LSWT</h3>
-      <p>Desarrollo CAD, análisis CFD, selección de ventilador axial y diseño por parámetros geométricos.</p>
-      <div class="tags">
-        <span class="tag">SolidWorks</span>
-        <span class="tag">Flow Simulation</span>
-        <span class="tag">CFD</span>
-      </div>
+  <div class="card">
+    <h3>Método Híbrido FFF + Cold Casting</h3>
+    <p>Técnica avanzada para piezas huecas con resinas epóxicas/poliuretano para optimización peso–resistencia.</p>
+    <div class="tags">
+      <span>3D Printing</span><span>Materiales</span>
     </div>
+  </div>
 
-    <div class="card">
-      <h3>Método Híbrido FFF + Cold Casting</h3>
-      <p>Optimización de peso y resistencia utilizando estructuras huecas rellenadas con resinas.</p>
-      <div class="tags">
-        <span class="tag">Materiales</span>
-        <span class="tag">3D Printing</span>
-      </div>
+  <div class="card">
+    <h3>Simulación CFD de Ductos</h3>
+    <p>Simulación de velocidad, presión y coeficientes de pérdida utilizando flujos internos.</p>
+    <div class="tags">
+      <span>CFD</span><span>Flow Simulation</span>
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Simulación CFD de Ductos</h3>
-      <p>Análisis de velocidad, presión y coeficientes de pérdida.</p>
-      <div class="tags">
-        <span class="tag">CFD</span>
-        <span class="tag">Flow Simulation</span>
-      </div>
-    </div>
-  </section>
+<!-- PANEL 3 – GALERÍA -->
+<section class="panel reveal slide-left">
+  <h2>Galería</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/500x350?text=CAD" class="imgcard reveal">
+    <img src="https://via.placeholder.com/500x350?text=CFD" class="imgcard reveal">
+    <img src="https://via.placeholder.com/500x350?text=LSWT" class="imgcard reveal">
+    <img src="https://via.placeholder.com/500x350?text=FFF+Casting" class="imgcard reveal">
+  </div>
+</section>
 
-  <!-- GALERÍA -->
-  <section class="section reveal">
-    <h2>Galería</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/600x400?text=CAD" class="imgcard reveal">
-      <img src="https://via.placeholder.com/600x400?text=CFD" class="imgcard reveal">
-      <img src="https://via.placeholder.com/600x400?text=LSWT" class="imgcard reveal">
-      <img src="https://via.placeholder.com/600x400?text=Casting" class="imgcard reveal">
-    </div>
-  </section>
+<!-- PANEL 4 – PUBLICACIONES -->
+<section class="panel reveal slide-right">
+  <h2>Publicaciones</h2>
+  <div class="card">
+    <p><strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>
+    IEEE Xplore – 2023<br>
+    DOI: 10.1109/CONCAPANXLI59599.2023.10517570</p>
+  </div>
+</section>
 
-  <!-- PUBLICACIONES -->
-  <section class="section reveal">
-    <h2>Publicaciones</h2>
-    <div class="card">
-      <p>
-        <strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>
-        IEEE Xplore – 2023<br>
-        DOI: 10.1109/CONCAPANXLI59599.2023.10517570
-      </p>
-    </div>
-  </section>
+<!-- PANEL 5 – CONTACTO -->
+<section class="panel reveal slide-left">
+  <h2>Contacto</h2>
+  <div class="card">
+    <p>Email: <strong>david.orantes97@gmail.com</strong></p>
+    <p>GitHub: <strong>https://github.com/davidorantes97-ai</strong></p>
+    <p>LinkedIn: <strong>https://linkedin.com/in/tuusuario</strong></p>
+  </div>
+</section>
 
-  <!-- CONTACTO -->
-  <section class="section reveal">
-    <h2>Contacto</h2>
-    <div class="card">
-      <p>Email: <strong>david.orantes97@gmail.com</strong></p>
-      <p>GitHub: <strong>https://github.com/davidorantes97-ai</strong></p>
-      <p>LinkedIn: <strong>https://linkedin.com/in/tuusuario</strong></p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    © 2025 · Portafolio de David Orantes Cubias
-  </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
-
 

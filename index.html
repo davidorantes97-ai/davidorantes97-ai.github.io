@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>David Orantes Cubias | Portafolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f6f6f6; color:#222; }
-    header { background: #0a0a23; color: white; padding: 2rem; text-align: center; }
-    h1 { margin: 0; font-size: 2.5rem; }
-    h2 { margin-top: 2rem; color:#0a0a23; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
-    .card { background:white; padding:1.5rem; margin:1rem 0; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .tag { display:inline-block; background:#0a0a23; color:white; padding:0.2rem 0.6rem; margin:0.2rem; border-radius:4px; font-size:0.8rem; }
-    footer { text-align:center; padding:2rem; color:#555; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#f5f5f7; color:#1d1d1f; }
+    header { text-align:center; padding:6rem 2rem 4rem; background:linear-gradient(180deg,#0a0a23,#111133); color:white; }
+    header h1 { font-size:3rem; margin:0; font-weight:700; }
+    header p { margin-top:1rem; font-size:1.2rem; letter-spacing:1px; opacity:.9; }
+
+    .section { max-width:1100px; margin:4rem auto; padding:0 2rem; }
+    .section h2 { font-size:2rem; margin-bottom:2rem; font-weight:600; }
+
+    .card { background:white; padding:2rem; border-radius:28px; box-shadow:0 10px 30px rgba(0,0,0,0.08); margin-bottom:2.5rem; transition: all .3s; }
+    .card:hover { transform:translateY(-6px); box-shadow:0 14px 34px rgba(0,0,0,0.12); }
+    .card h3 { font-size:1.6rem; margin:0 0 1rem; }
+    .card p { line-height:1.6; font-size:1rem; }
+    .tag { display:inline-block; background:#0a0a23; color:white; padding:.35rem .9rem; border-radius:12px; margin:.25rem; font-size:.8rem; }
+
+    .gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; margin-top:2rem; }
+    .imgcard { border-radius:22px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.1); }
+    .imgcard img { width:100%; display:block; }
+
+    footer { text-align:center; padding:3rem; font-size:.9rem; color:#555; margin-top:4rem; }
   </style>
 </head>
 <body>
@@ -21,17 +32,19 @@
     <p>Ingeniero Aeronáutico · CAD · CFD · MATLAB</p>
   </header>
 
-  <section>
+  <section class="section">
     <h2>Sobre mí</h2>
     <div class="card">
-      <p>Ingeniero Aeronáutico con experiencia en diseño CAD, simulaciones CFD, análisis con MATLAB y publicación científica en IEEE Xplore. Apasionado por la ingeniería aplicada, la investigación técnica y la creación de soluciones que combinan aerodinámica, manufactura y ciencia computacional.</p>
+      <p>Ingeniero Aeronáutico con experiencia en diseño CAD, simulaciones CFD, MATLAB, manufactura aditiva, resinas, y publicación científica en IEEE Xplore. Comprometido con ingeniería aplicada, investigación técnica y diseño aerodinámico.</p>
     </div>
+  </section>
 
+  <section class="section">
     <h2>Proyectos Destacados</h2>
 
     <div class="card">
       <h3>Diseño Conceptual de Túnel de Viento LSWT</h3>
-      <p>Desarrollo CAD y análisis de pérdidas por sección, selección de ventilador axial y metodología iterativa para diseño basado en parámetros geométricos.</p>
+      <p>Desarrollo CAD, estimación de pérdidas, selección de ventilador axial y análisis aerodinámico computacional.</p>
       <span class="tag">SolidWorks</span>
       <span class="tag">Flow Simulation</span>
       <span class="tag">CFD</span>
@@ -40,28 +53,42 @@
 
     <div class="card">
       <h3>Método Híbrido FFF + Cold Casting</h3>
-      <p>Experimentos con PLA/PETG + resinas epóxicas y poliuretano para optimizar resistencia, peso y comportamiento térmico, aplicado a secciones del LSWT.</p>
+      <p>Optimización mediante estructuras huecas y resinas (epoxi/poliuretano) para mejorar resistencia, masa y estabilidad térmica.</p>
       <span class="tag">3D Printing</span>
-      <span class="tag">Materiales</span>
+      <span class="tag">Resinas</span>
       <span class="tag">CAD</span>
     </div>
 
     <div class="card">
-      <h3>Análisis CFD de Ductos y Flujo Interno</h3>
-      <p>Simulaciones de velocidad, presión y pérdidas en canales, difusores y cámaras de asentamiento.</p>
-      <span class="tag">CFD</span>
-      <span class="tag">Flow Simulation</span>
+      <h3>CFD de Ductos y Flujo Interno</h3>
+      <p>Simulaciones de presión, velocidad y coeficientes de pérdida para ductos, cámaras de asentamiento y difusores.</p>
       <span class="tag">MATLAB</span>
+      <span class="tag">Flow Simulation</span>
+      <span class="tag">CFD</span>
     </div>
+  </section>
 
+  <section class="section">
+    <h2>Galería de Ingeniería</h2>
+    <div class="gallery">
+      <div class="imgcard"><img src="https://via.placeholder.com/600x400?text=CAD+Model" alt="CAD" /></div>
+      <div class="imgcard"><img src="https://via.placeholder.com/600x400?text=CFD+Simulation" alt="CFD" /></div>
+      <div class="imgcard"><img src="https://via.placeholder.com/600x400?text=LSWT+Design" alt="LSWT" /></div>
+      <div class="imgcard"><img src="https://via.placeholder.com/600x400?text=FFF+Cold+Casting" alt="Casting" /></div>
+    </div>
+  </section>
+
+  <section class="section">
     <h2>Publicaciones</h2>
     <div class="card">
-      <p><strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>Publicado en IEEE Xplore – CONCAPAN XLI 2023.<br>DOI: 10.1109/CONCAPANXLI59599.2023.10517570</p>
+      <p><strong>Open Circuit/Eiffel-Type Subsonic LSWT – Conceptual Design...</strong><br>IEEE Xplore – CONCAPAN XLI 2023<br>DOI: 10.1109/CONCAPANXLI59599.2023.10517570</p>
     </div>
+  </section>
 
+  <section class="section">
     <h2>Contacto</h2>
     <div class="card">
-      <p>Email: <strong>tucorreo@ejemplo.com</strong></p>
+      <p>Email: <strong>david@example.com</strong></p>
       <p>GitHub: <strong>https://github.com/davidorantes97-ai</strong></p>
       <p>LinkedIn: <strong>https://linkedin.com/in/tuusuario</strong></p>
     </div>

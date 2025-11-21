@@ -1,4 +1,21 @@
 /* ===== TEMA AZUL OSCURO (como tu Moadboard) ===== */
+/* === CONTENEDOR PRINCIPAL CON SCROLL-SNAP === */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+/* === CADA SECCIÓN OCUPA TODA LA PANTALLA === */
+.fullpage {
+  height: 100vh;           /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start; 
+}
 
 :root {
   --bg:#0b1020;

@@ -1,17 +1,15 @@
-// ============ Scroll Reveal Apple Style ============
+// ================== SCROLL REVEAL ==================
 
 document.addEventListener("DOMContentLoaded", () => {
+  const els = document.querySelectorAll(".reveal");
 
-  const reveals = document.querySelectorAll(".reveal");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add("visible");
       }
     });
-  }, { threshold: 0.2 });
+  }, {threshold:0.2});
 
-  reveals.forEach(el => observer.observe(el));
-
+  els.forEach(el => io.observe(el));
 });

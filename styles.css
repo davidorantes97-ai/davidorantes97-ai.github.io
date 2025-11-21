@@ -1,0 +1,90 @@
+/* ======= Fuente y colores Apple ======= */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+/* ======= HERO ======= */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #0a0a23, #111133);
+  color: white;
+}
+
+/* ======= SECCIONES ======= */
+.section {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ======= CARDS (Glass + sombras Apple) ======= */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 28px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* ======= TAGS ======= */
+.tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  background: #0a0a23;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* ======= GALERÍA ======= */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.imgcard {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ======= FOOTER ======= */
+.footer {
+  text-align: center;
+  padding: 3rem;
+  color: #555;
+}
+
+/* ======= SCROLL REVEAL ======= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

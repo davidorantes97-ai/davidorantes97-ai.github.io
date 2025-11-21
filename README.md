@@ -1,1 +1,0 @@
-# davidorantes97-ai.github.io

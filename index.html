@@ -1,98 +1,246 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="description" content="Portafolio profesional de David Emanuel Orantes Cubias. Ingeniero Aeronáutico especializado en CAD, CFD, MATLAB, aerodinámica y diseño 3D.">
-<meta name="author" content="David Emanuel Orantes Cubias">
-<meta name="google-site-verification" content="8TGw0sstr5zUC9Wr2GS7mTxK6OvZRJF-SpjkjzJPRjo">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portafolio – David Orantes Cubias</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-<!-- CSS -->
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Orantes · CFD · CAD · AI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Opcional: cambia o quita esta fuente si quieres algo más simple -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-main">
+        <div>
+          <h1 class="name">David Orantes</h1>
+          <p class="tagline">
+            Aerospace Engineer · CFD · CAD · AI-Assisted Simulation
+          </p>
+          <p class="location">
+            📍 El Salvador — Open to Remote R&D / Internship roles (CFD & AI)
+          </p>
+        </div>
+        <nav class="quick-links">
+          <!-- TODO: Cambia estos enlaces por los tuyos -->
+          <a href="mailto:TU_CORREO_AQUI" target="_blank" rel="noreferrer">Email</a>
+          <a href="https://github.com/davidorantes97-ai" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
 
-<!-- NAV -->
-<div class="nav">
-  <h1 class="logo">David Orantes Cubias</h1>
-  <div class="subtitle">Ingeniero Aeronáutico · CAD · CFD · MATLAB</div>
-</div>
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me / Sobre mí</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>About Me (EN)</h3>
+            <p>
+              I am an Aeronautical Engineer passionate about
+              <strong>CFD, CAD, numerical simulation and AI-assisted engineering workflows</strong>.
+              I enjoy building, analysing and understanding systems from first principles.
+              I currently work on fluid-dynamics analysis, educational CFD workflows and
+              the development of <strong>AI-augmented tools</strong> for engineering and mood dynamics modelling.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Sobre mí (ES)</h3>
+            <p>
+              Soy un ingeniero aeronáutico especializado en
+              <strong>CFD, CAD, simulación numérica y herramientas de IA para ingeniería</strong>.
+              Me gusta crear, analizar y comprender sistemas desde cero. Trabajo en análisis
+              aerodinámico, guías educativas de simulación y en el desarrollo de
+              <strong>asistentes inteligentes</strong> para simulación y modelos del estado de ánimo.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<!-- PANEL 1 – SOBRE MI -->
-<section class="panel">
-  <h2>Sobre mí</h2>
-  <p>
-    Ingeniero Aeronáutico especializado en diseño CAD, análisis CFD, simulaciones en MATLAB y
-    manufactura aditiva. Autor publicado en IEEE Xplore. Enfocado en la integración de ingeniería,
-    computación científica y aerodinámica aplicada.
-  </p>
-</section>
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Selected Projects / Proyectos</h2>
 
-<!-- PANEL 2 – PROYECTOS -->
-<section class="panel reveal slide-right">
-  <h2>Proyectos Destacados</h2>
+        <!-- PROYECTO 1 -->
+        <article class="project-card">
+          <h3>LSWT – Low Speed Wind Tunnel (R&amp;D Project)</h3>
+          <p class="project-role">
+            <strong>Role:</strong> Design, CFD, analysis, documentation
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> Inventor, SolidWorks, Autodesk CFD, MATLAB
+          </p>
+          <p class="project-text">
+            <strong>Workflow:</strong> CAD → mesh generation → boundary conditions →
+            CFD simulation → uniformity analysis → experimental comparison in the test section.
+          </p>
+          <p class="project-text">
+            <strong>Key Results:</strong> contraction and diffuser performance assessment,
+            pressure recovery estimation, test-section uniformity metrics and correlation
+            between CFD and experimental measurements.
+          </p>
+          <!-- TODO: Cambia el src por una imagen tuya -->
+          <div class="project-images">
+            <div class="img-placeholder">LSWT CAD / Section View</div>
+            <div class="img-placeholder">CFD Contours · Velocity / Pressure</div>
+          </div>
+        </article>
 
-  <div class="card">
-    <h3>Túnel de Viento LSWT</h3>
-    <p>Diseño conceptual CAD, análisis de pérdidas, selección de ventilador axial y cálculos por parámetros geométricos.</p>
-    <div class="tags">
-      <span>SolidWorks</span><span>CFD</span><span>Flow Simulation</span>
-    </div>
+        <!-- PROYECTO 2 -->
+        <article class="project-card">
+          <h3>NACA 2412 – CFD &amp; MATLAB Airfoil Analysis</h3>
+          <p class="project-role">
+            <strong>Role:</strong> Geometry generation, CFD setup, post-processing
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> MATLAB, Python, Autodesk CFD
+          </p>
+          <p class="project-text">
+            <strong>Workflow:</strong> airfoil geometry generation → mesh discretization →
+            CFD simulation → Cp, Cl and Cd extraction → MATLAB post-processing and
+            comparison with thin-airfoil theory.
+          </p>
+          <p class="project-text">
+            <strong>Key Results:</strong> lift coefficient curve versus angle of attack,
+            Cp contour maps and validation against classical aerodynamic theory for
+            attached flow regimes.
+          </p>
+          <div class="project-images">
+            <div class="img-placeholder">NACA 2412 Geometry / Mesh</div>
+            <div class="img-placeholder">Pressure Coefficient / Cl vs α</div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 3 -->
+        <article class="project-card">
+          <h3>Internal Flow Simulation – Duct / Diffuser Study</h3>
+          <p class="project-role">
+            <strong>Role:</strong> CFD setup, mesh optimisation, flow metrics
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> Autodesk CFD, Python
+          </p>
+          <p class="project-text">
+            <strong>Workflow:</strong> internal duct geometry → mesh refinement study →
+            inlet/outlet boundary conditions → steady-state CFD → evaluation of
+            velocity profiles and pressure losses.
+          </p>
+          <p class="project-text">
+            <strong>Key Results:</strong> loss coefficients, influence of mesh density on
+            solution stability and qualitative assessment of flow separation in the diffuser.
+          </p>
+          <div class="project-images">
+            <div class="img-placeholder">Duct / Diffuser Model</div>
+            <div class="img-placeholder">Velocity Profile / Streamlines</div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 4 -->
+        <article class="project-card">
+          <h3>NeuroBalance – AI-Assisted Mood Dynamics Model</h3>
+          <p class="project-role">
+            <strong>Role:</strong> Mathematical modelling, signal processing, ML experimentation
+          </p>
+          <p class="project-tools">
+            <strong>Tools:</strong> MATLAB, Python, SciPy, basic ML libraries
+          </p>
+          <p class="project-text">
+            <strong>Description:</strong> research project exploring AI-assisted modelling of mood
+            dynamics in bipolar spectrum using differential equations and physiological / daily-life signals
+            (sleep, activity, stress). The goal is to build predictive tools that anticipate high-risk states
+            and assist clinical decision-making.
+          </p>
+          <p class="project-text">
+            <strong>Focus:</strong> implementation of published dynamical models, parameter estimation,
+            feature extraction from time-series and design of simple surrogate models as virtual companions.
+          </p>
+          <div class="project-images">
+            <div class="img-placeholder">Mood Dynamics · Phase Portrait</div>
+            <div class="img-placeholder">Prototype Dashboard · Time Series</div>
+          </div>
+        </article>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills / Herramientas</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Simulation</h3>
+            <ul>
+              <li>CFD workflows (pre → solve → post)</li>
+              <li>Mesh generation &amp; refinement</li>
+              <li>Boundary conditions &amp; convergence checks</li>
+              <li>Verification / Validation mindset</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Software</h3>
+            <ul>
+              <li>SolidWorks, Inventor</li>
+              <li>Autodesk CFD / Flow Simulation</li>
+              <li>MATLAB, Python</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI &amp; Data</h3>
+            <ul>
+              <li>Data preprocessing &amp; feature extraction</li>
+              <li>Simple ML experiments / surrogate models</li>
+              <li>Time-series analysis</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Teaching &amp; Docs</h3>
+            <ul>
+              <li>CFD and aerodynamics lab guides</li>
+              <li>Technical writing (reports, IEEE-style)</li>
+              <li>Mentoring students in simulation workflows</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact / Contacto</h2>
+        <p class="contact-text">
+          I am open to <strong>remote internships, junior R&amp;D roles and collaboration</strong>
+          in CFD, CAD and AI-assisted simulation.
+        </p>
+        <p class="contact-text">
+          Estoy abierto a <strong>pasantías remotas, roles junior de I+D y colaboraciones</strong>
+          en CFD, CAD y simulación asistida por IA.
+        </p>
+        <div class="contact-links">
+          <!-- TODO: Cambia por tus datos reales -->
+          <a href="mailto:david.orantes97@gmail.com" class="btn">Email</a>
+          <a href="https://github.com/davidorantes97-ai" target="_blank" rel="noreferrer" class="btn">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="btn btn-outline">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> David Orantes — Portfolio</p>
+    </footer>
   </div>
 
-  <div class="card">
-    <h3>Método Híbrido FFF + Cold Casting</h3>
-    <p>Técnica avanzada para piezas huecas con resinas epóxicas/poliuretano para optimización peso–resistencia.</p>
-    <div class="tags">
-      <span>3D Printing</span><span>Materiales</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>Simulación CFD de Ductos</h3>
-    <p>Simulación de velocidad, presión y coeficientes de pérdida utilizando flujos internos.</p>
-    <div class="tags">
-      <span>CFD</span><span>Flow Simulation</span>
-    </div>
-  </div>
-</section>
-
-<!-- PANEL 3 – GALERÍA -->
-<section class="panel reveal slide-left">
-  <h2>Galería</h2>
-  <div class="gallery">
-    <img src="https://via.placeholder.com/500x350?text=CAD" class="imgcard reveal">
-    <img src="https://via.placeholder.com/500x350?text=CFD" class="imgcard reveal">
-    <img src="https://via.placeholder.com/500x350?text=LSWT" class="imgcard reveal">
-    <img src="https://via.placeholder.com/500x350?text=FFF+Casting" class="imgcard reveal">
-  </div>
-</section>
-
-<!-- PANEL 4 – PUBLICACIONES -->
-<section class="panel reveal slide-right">
-  <h2>Publicaciones</h2>
-  <div class="card">
-    <p><strong>Open Circuit/Eiffel-Type Subsonic LSWT...</strong><br>
-    IEEE Xplore – 2023<br>
-    DOI: 10.1109/CONCAPANXLI59599.2023.10517570</p>
-  </div>
-</section>
-
-<!-- PANEL 5 – CONTACTO -->
-<section class="panel reveal slide-left">
-  <h2>Contacto</h2>
-  <div class="card">
-    <p>Email: <strong>david.orantes97@gmail.com</strong></p>
-    <p>GitHub: <strong>https://github.com/davidorantes97-ai</strong></p>
-    <p>LinkedIn: <strong>https://linkedin.com/in/tuusuario</strong></p>
-  </div>
-</section>
-
-<script src="main.js"></script>
+  <!-- Año automático opcional (puedes borrar el script si no quieres JS) -->
+  <script>
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 

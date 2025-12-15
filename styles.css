@@ -300,7 +300,7 @@ body {
 
 .project-figure.centered {
   max-width: 800px;   /* controla el tamaño */
-  width: 100%;
+  width: 60%;
 }
 
 }

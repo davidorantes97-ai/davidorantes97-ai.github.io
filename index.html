@@ -62,33 +62,66 @@
       </section>
 
       <!-- PROJECTS -->
-      <section id="projects" class="section">
-        <h2 class="section-title">Selected Projects / Proyectos</h2>
+      <article class="project-card">
+  <h3>LSWT – Low Speed Wind Tunnel <span class="project-tag">R&amp;D</span></h3>
 
-        <!-- PROYECTO 1 -->
-        <article class="project-card">
-          <h3>LSWT – Low Speed Wind Tunnel (R&amp;D Project)</h3>
-          <p class="project-role">
-            <strong>Role:</strong> Design, CFD, analysis, documentation
-          </p>
-          <p class="project-tools">
-            <strong>Tools:</strong> Inventor, SolidWorks, Autodesk CFD, MATLAB
-          </p>
-          <p class="project-text">
-            <strong>Workflow:</strong> CAD → mesh generation → boundary conditions →
-            CFD simulation → uniformity analysis → experimental comparison in the test section.
-          </p>
-          <p class="project-text">
-            <strong>Key Results:</strong> contraction and diffuser performance assessment,
-            pressure recovery estimation, test-section uniformity metrics and correlation
-            between CFD and experimental measurements.
-          </p>
-          <!-- TODO: Cambia el src por una imagen tuya -->
-          <div class="project-images">
-            <div class="img-placeholder">LSWT CAD / Section View</div>
-            <div class="img-placeholder">CFD Contours · Velocity / Pressure</div>
-          </div>
-        </article>
+  <p class="project-role">
+    <strong>Role:</strong>
+    Lead design and CFD analysis, including geometry definition, simulation setup,
+    validation and technical documentation.
+  </p>
+
+  <p class="project-tools">
+    <strong>Tools:</strong>
+    Autodesk Inventor, SolidWorks, Autodesk CFD, MATLAB
+  </p>
+
+  <p class="project-text">
+    <strong>Scope & Workflow:</strong>
+    End-to-end development of a low-speed wind tunnel, covering CAD modeling,
+    mesh generation, boundary condition definition, CFD simulations,
+    flow uniformity analysis and experimental validation in the test section.
+  </p>
+
+  <p class="project-text">
+    <strong>Key Engineering Outcomes:</strong>
+    Evaluation of contraction and diffuser performance, estimation of pressure recovery,
+    quantification of test-section flow uniformity, and correlation between CFD predictions
+    and experimental measurements.
+  </p>
+
+  <p class="project-text">
+    <strong>Academic Contribution:</strong>
+    Results were further developed and documented in the peer-reviewed IEEE article:
+    <em>“Open Circuit/Eiffel-Type Subsonic Low Speed Wind Tunnel (LSWT)
+    Conceptual Design Initial Parameters and Section Losses' Analysis
+    for the Selection of an Adequate and Efficient Axial Fan”</em>,
+    presented at CONCAPAN XL I &lt;International Conference&gt; (2023),
+    <a href="https://ieeexplore.ieee.org/document/10517570" target="_blank">
+      https://ieeexplore.ieee.org/document/10517570
+    </a>,
+    DOI: <a href="https://doi.org/10.1109/CONCAPANXLI59599.2023.10517570" target="_blank">
+      10.1109/CONCAPANXLI59599.2023.10517570
+    </a>.
+  </p>
+
+  <div class="project-images single-image">
+  <figure class="project-figure centered">
+    <img
+      src="lswt_render.jpeg"
+      alt="LSWT low-speed wind tunnel CAD render"
+      loading="lazy"
+    >
+    <figcaption>
+      LSWT Geometry<br>
+      <span>CAD / Section View</span>
+    </figcaption>
+  </figure>
+</div>
+
+
+</article>
+
 
         <!-- PROYECTO 2 -->
         <article class="project-card">
@@ -166,45 +199,80 @@
       </section>
 
       <!-- SKILLS -->
-      <section id="skills" class="section">
-        <h2 class="section-title">Skills / Herramientas</h2>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Simulation</h3>
-            <ul>
-              <li>CFD workflows (pre → solve → post)</li>
-              <li>Mesh generation &amp; refinement</li>
-              <li>Boundary conditions &amp; convergence checks</li>
-              <li>Verification / Validation mindset</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Software</h3>
-            <ul>
-              <li>SolidWorks, Inventor</li>
-              <li>Autodesk CFD / Flow Simulation</li>
-              <li>MATLAB, Python</li>
-              <li>Git / GitHub</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>AI &amp; Data</h3>
-            <ul>
-              <li>Data preprocessing &amp; feature extraction</li>
-              <li>Simple ML experiments / surrogate models</li>
-              <li>Time-series analysis</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Teaching &amp; Docs</h3>
-            <ul>
-              <li>CFD and aerodynamics lab guides</li>
-              <li>Technical writing (reports, IEEE-style)</li>
-              <li>Mentoring students in simulation workflows</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<section id="skills" class="section">
+  <h2 class="section-title">Skills / Competencias</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-group">
+      <h3>Simulation &amp; Engineering</h3>
+      <ul>
+        <li>CFD end-to-end workflows (pre → solve → post)</li>
+        <li>Internal flow analysis (wind tunnels, ducts)</li>
+        <li>Mesh generation, refinement &amp; grid sensitivity</li>
+        <li>Boundary conditions, convergence &amp; V&amp;V mindset</li>
+        <li>Pressure losses, pressure recovery &amp; flow uniformity</li>
+        <li>CFD vs experimental data correlation</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>CAD &amp; Design</h3>
+      <ul>
+        <li>Parametric CAD modeling for aerodynamic applications</li>
+        <li>Spline-based and section-based geometry definition</li>
+        <li>Design for CFD (clean, simulation-ready geometry)</li>
+        <li>Conceptual &amp; preliminary engineering design</li>
+        <li>Technical drawings and section interpretation</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>Programming &amp; Data</h3>
+      <ul>
+        <li>MATLAB for engineering analysis and post-processing</li>
+        <li>Python for numerical computing and data handling</li>
+        <li>Data preprocessing and feature extraction</li>
+        <li>Time-series analysis</li>
+        <li>Automation of engineering workflows</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>AI Applied to Engineering</h3>
+      <ul>
+        <li>AI-assisted engineering workflows</li>
+        <li>Machine Learning fundamentals for engineering data</li>
+        <li>Simple regression models and surrogate modeling concepts</li>
+        <li>Critical evaluation of AI-generated outputs</li>
+        <li>Human-in-the-loop AI approaches</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>Research &amp; Documentation</h3>
+      <ul>
+        <li>IEEE-style technical writing</li>
+        <li>Research structuring and academic publication support</li>
+        <li>CFD documentation and reproducible reporting</li>
+        <li>DOI, citations and institutional attribution</li>
+      </ul>
+    </div>
+
+    <div class="skill-group">
+      <h3>Teaching &amp; Professional Practice</h3>
+      <ul>
+        <li>Design of CFD and aerodynamics lab guides</li>
+        <li>Mentoring students in simulation workflows</li>
+        <li>Clear technical communication (ES / EN)</li>
+        <li>Git, GitHub &amp; remote development workflows</li>
+        <li>Technical portfolio development (GitHub Pages)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
       <!-- CONTACTO -->
       <section id="contact" class="section">
